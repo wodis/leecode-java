@@ -5,6 +5,7 @@ import algorithms.t38.CountAndSay;
 import java.util.Date;
 
 /**
+ * Main Class.
  * Created by wudi on 2015/3/29.
  */
 public class App {

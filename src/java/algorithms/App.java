@@ -8,7 +8,6 @@ import algorithms.t38.CountAndSay;
 public class App {
     public static void main(String[] args){
         CountAndSay countAndSay = new CountAndSay();
-        String s = countAndSay.countAndSay(1211);
-        System.out.println(s);
+        System.out.println(countAndSay.countAndSay(8));
     }
 }

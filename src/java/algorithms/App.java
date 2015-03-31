@@ -1,8 +1,10 @@
 package algorithms;
 
+import algorithms.t118.PascalsTriangle;
 import algorithms.t38.CountAndSay;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Main Class.
@@ -10,10 +12,24 @@ import java.util.Date;
  */
 public class App {
     public static void main(String[] args) {
-        CountAndSay countAndSay = new CountAndSay();
         long start = new Date().getTime();
-        System.out.println(countAndSay.countAndSay(5));
+        /******/
+
+        pascalsTriangle();
+
+        /******/
         long end = new Date().getTime();
-        System.out.println(end - start);
+        System.out.println("consume time : " + (end - start) + " ms");
+    }
+
+    public static void pascalsTriangle() {
+        PascalsTriangle pascalsTriangle = new PascalsTriangle();
+        List<List<Integer>> result = pascalsTriangle.generate(5);
+        System.out.println(result);
+    }
+
+    public static void countAndSay() {
+        CountAndSay countAndSay = new CountAndSay();
+        System.out.println(countAndSay.countAndSay(5));
     }
 }

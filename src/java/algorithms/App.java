@@ -1,6 +1,8 @@
 package algorithms;
 
 import algorithms.t118.PascalsTriangle;
+import algorithms.t21.ListNode;
+import algorithms.t21.MergeTwoSortedLists;
 import algorithms.t38.CountAndSay;
 
 import java.util.Date;
@@ -15,11 +17,18 @@ public class App {
         long start = new Date().getTime();
         /******/
 
-        pascalsTriangle();
+        mergeTwoLists();
 
         /******/
         long end = new Date().getTime();
         System.out.println("consume time : " + (end - start) + " ms");
+    }
+
+    public static void mergeTwoLists(){
+        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        mergeTwoSortedLists.mergeTwoLists(l1,l2);
     }
 
     public static void pascalsTriangle() {
